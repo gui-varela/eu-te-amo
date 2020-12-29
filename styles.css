@@ -24,6 +24,31 @@ button {
   cursor: pointer;
 }
 
+input[type=range] {
+  -webkit-appearance: none;
+  appearance: none;
+  display: inline-block;
+  height: 0.5em;
+  left: 4em;
+  border-radius: 5px;
+  background-color: #71bff3;
+  outline: none;
+}
+
+::-webkit-slider-thumb {
+
+  all: unset; /* limpa os estilos iniciais */
+  -webkit-appearance: none; /* remove a aparencia padão */
+  border: none;
+  
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background: #e26060;
+}
+
+/* ---------------------------- FIM DA REMOÇÃO DE ESTILOS INICIAIS ------------------------------ */
+
 main {
   display: flex;
   flex-direction: column;
@@ -79,7 +104,7 @@ div#opcoes input {
 
 h2#titulo-msg {
   display: flex;
-  align-items: flex-start;
+  align-items: center;
   justify-content: center;
 
   width: 180px;
