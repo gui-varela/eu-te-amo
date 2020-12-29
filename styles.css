@@ -28,8 +28,7 @@ input[type=range] {
   -webkit-appearance: none;
   appearance: none;
   display: inline-block;
-  height: 0.5em;
-  left: 4em;
+  height: 7px;
   border-radius: 5px;
   background-color: #71bff3;
   outline: none;
@@ -41,8 +40,8 @@ input[type=range] {
   -webkit-appearance: none; /* remove a aparencia padão */
   border: none;
   
-    width: 25px;
-    height: 25px;
+    width: 15px;
+    height: 15px;
     border-radius: 50%;
     background: #e26060;
 }
@@ -57,21 +56,36 @@ main {
   justify-content: center;
   
   margin: auto;
+  padding: 0 20px 0 20px;
   max-width: 1000px;
-  min-width: 500px;
+  min-width: 300px;
 }
 
-h1 {
-  margin: 10vh 0 30px 0;
+h1#titulo {
+  font-family: 'Dancing Script', cursive;
+  margin-top: 10vh;
+  font-size: 2.5rem;
+  z-index: 1000;
+}
+
+div#sublinhar-titulo {
+  width: 440px;
+  transform: translateX(-10px);
+  height: 4px;
+  background: #71bff3;
+  margin-top: -10px;
+  margin-bottom: 30px;
 }
 
 h1 strong {
   color: #e26060;
-  font-weight: bolder;
+  font-weight: 700;
+  font-family: 'Dancing Script', cursive;
 }
 
-h2 {
-  margin: 20px 0;
+h2#pergunta {
+  font-size: 1.3rem;
+  margin: 30px 0 10px 0;
 }
 
 h2 strong {
@@ -91,7 +105,7 @@ div#opcoes {
 
 div#opcoes input {
   width: 350px;
-  margin: 30px auto;
+  margin: 20px 40px 50px 20px;
 }
 
 #range-text {
@@ -102,30 +116,44 @@ div#opcoes input {
   width: 100%;
 }
 
-h2#titulo-msg {
+div#titulo-msg {
   display: flex;
   align-items: center;
   justify-content: center;
 
-  width: 180px;
-  height: 40px;
-  background-color: #71bff3;
-  color: #fff;
+  width: 200px;
+  height: 7px;
+  margin-top: 25px;
+
+  background-color: #89cefc;
   z-index: 1000;
-  border-radius: 10px;
-  box-shadow: 0px 0px 15px #00000017;
+  box-shadow: 0px 0px 5px #89cefc23;
+}
+
+div#titulo-msg h2 {
+  font-family: 'Dancing Script', cursive;
+  font-weight: 700;
+  font-size: 2.5rem;
+
+  margin-top: -35px;
+  margin-left: -5px;
+
+  text-shadow: 0 0 10px #fff;
+  color: #e26060;
+
+  transform: translateX(-5px);
 }
 
 div#box-mensagem {
   display: flex;
 
-  margin: -30px 30px 30px 30px;
+  margin: -5px 30px 30px 30px;
   padding: 30px;
-  height: 150px;
+  height: 180px;
   width: 100%;
-  min-width: 400px;
+  min-width: 300px;
   background: #fff;
-  box-shadow: 0px 0px 20px #00000017;
+  box-shadow: 0px 0px 20px #00000010;
   border-radius: 10px;
   border: 2px solid #ddd;
 }
@@ -191,10 +219,4 @@ p#muito {
 #btn2:hover {  	
   filter: brightness(1.2);
   transform: translateY(-5px);
-}
-
-@media only screen and (max-width: 700px) {
-  main {
-    width: 550px;
-  }
 }

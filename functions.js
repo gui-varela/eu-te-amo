@@ -5,9 +5,15 @@ var prefM = [
 ]
 
 var prefF = [
-  "elevado a",
+  "elevado à",
   "vezes a",
   "mais a"
+]
+
+var prefI = [
+  "elevado ao",
+  "vezes",
+  "mais"
 ]
 
 var msgBox = document.querySelector('#mensagem')
@@ -24,7 +30,7 @@ function gerar() {
   var i = 0
   while (i<valor) {
     var mensagens = [
-      `${prefM[parseInt(Math.random()*prefM.length)]} infinito&nbsp`,
+      `${prefI[parseInt(Math.random()*prefI.length)]} infinito&nbsp`,
       `${prefM[parseInt(Math.random()*prefM.length)]} número de estrelas do universo&nbsp`,
       `${prefF[parseInt(Math.random()*prefF.length)]} quantidade de grãos de areia da Terra&nbsp`,
       `${prefM[parseInt(Math.random()*prefM.length)]} número de gotas de água no oceano&nbsp`,
@@ -36,7 +42,15 @@ function gerar() {
       `${prefM[parseInt(Math.random()*prefM.length)]} peso de todas as baleias juntas&nbsp`,
       `${prefM[parseInt(Math.random()*prefM.length)]} número de palavras num dicionário&nbsp`,
       `${prefF[parseInt(Math.random()*prefF.length)]} distância entre a Terra e o Sol&nbsp`,
-      `${prefM[parseInt(Math.random()*prefM.length)]} quantidade de árvores na Amazônia`
+      `${prefM[parseInt(Math.random()*prefM.length)]} quantidade de árvores na Amazônia&nbsp`,
+      `${prefM[parseInt(Math.random()*prefM.length)]} distância da terra pra galáxia mais distante&nbsp`,
+      `${prefF[parseInt(Math.random()*prefF.length)]} velocidade da luz&nbsp`,
+      `${prefM[parseInt(Math.random()*prefM.length)]} velocidade do som&nbsp`,
+      `${prefF[parseInt(Math.random()*prefF.length)]} área da maior estrela do universo&nbsp`,
+      `${prefF[parseInt(Math.random()*prefF.length)]} área do território da Rússia&nbsp`,
+      `${prefF[parseInt(Math.random()*prefF.length)]} quantidade de células no nosso corpo&nbsp`,
+      `${prefF[parseInt(Math.random()*prefF.length)]} força de mil cavalos&nbsp`,
+      `${prefF[parseInt(Math.random()*prefF.length)]} idade do universo&nbsp`,
     ]
 
     var random = parseInt(Math.random()*mensagens.length)
