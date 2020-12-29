@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main>
+    <h1 id="titulo">Gerador de <strong>Eu Te Amo 🤍</strong></h1>
+
+    <h2 id="pergunta">quanto você quer <strong>amar</strong> lelezinha hoje?</h2>
+
+    <div id="opcoes">
+      <div id="range-box"> 
+        <div id="range-text">
+          <p id="pouco">poquin</p>
+          <p id="medio">masomenos</p>
+          <p id="muito">muitão! ❤</p>
+        </div>
+        <input type="range" id="range" min="1" max="5">  
+      </div>
+      
+      <h2 id="titulo-msg">💕mensagem</h2>
+      <div id="box-mensagem"><p id="mensagem"></p></div>
+
+      <div id="botoes">
+        <button id="btn1" onclick="gerar()">GERAR</button>
+        <button id="btn2" onclick="limpar()">LIMPAR</button>
+      </div>
+    </div>
+
+    <script src="functions.js"></script>
+  </main>
+</body>
+</html>

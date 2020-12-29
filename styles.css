@@ -1,0 +1,175 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: 0;
+}
+
+body {
+  background: #f0f2f5;
+  color: #576063;
+  -webkit-font-smoothing: antialiased;
+}
+
+body, input, button {
+  font-family: 'Lato', sans-serif;
+  font-size: 16px;
+}
+
+h1, h2, h3, h4, h5, h6, strong {
+  font-weight: 400;
+}
+
+button {
+  cursor: pointer;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  
+  margin: auto;
+  max-width: 1000px;
+  min-width: 500px;
+}
+
+h1 {
+  margin: 10vh 0 30px 0;
+}
+
+h1 strong {
+  color: #e26060;
+  font-weight: bolder;
+}
+
+h2 {
+  margin: 20px 0;
+}
+
+h2 strong {
+  font-weight: bolder;
+  color: #e26060;
+}
+
+div#opcoes {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  width: 100%;
+  margin: 30px auto;
+}
+
+div#opcoes input {
+  width: 350px;
+  margin: 30px auto;
+}
+
+#range-text {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+  width: 100%;
+}
+
+h2#titulo-msg {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+
+  width: 180px;
+  height: 40px;
+  background-color: #71bff3;
+  color: #fff;
+  z-index: 1000;
+  border-radius: 10px;
+  box-shadow: 0px 0px 15px #00000017;
+}
+
+div#box-mensagem {
+  display: flex;
+
+  margin: -30px 30px 30px 30px;
+  padding: 30px;
+  height: 150px;
+  width: 100%;
+  min-width: 400px;
+  background: #fff;
+  box-shadow: 0px 0px 20px #00000017;
+  border-radius: 10px;
+  border: 2px solid #ddd;
+}
+
+p#mensagem {
+  text-align: left;
+}
+
+p#medio {
+  font-weight: bolder;
+  font-size: 1.1rem;
+  color: #438ec0;
+}
+
+p#muito {
+  font-weight: bolder;
+  font-size: 1.3rem;
+  color: #d45555;
+}
+
+#botoes {
+  display: flex;
+  flex-direction: row;
+}
+
+#btn1 {
+  margin: 20px 10px;
+  width: 150px;
+  height: 50px;
+
+  border: none;
+  background: #e26060;
+  color: #fff;
+  border-radius: 25px;
+
+  font-weight: bolder;
+  font-size: larger;
+
+  transition: 0.3s;
+}
+
+#btn1:hover {
+  background: rgb(241, 106, 106);
+  transform: translateY(-5px);
+}
+
+#btn2 {
+  margin: 20px 10px;
+  width: 150px;
+  height: 50px;
+
+  border: none;
+  background: #666;
+  color: #fff;
+  border-radius: 25px;
+
+  font-weight: bolder;
+  font-size: larger;
+
+  transition: 0.3s;
+}
+
+#btn2:hover {  	
+  filter: brightness(1.2);
+  transform: translateY(-5px);
+}
+
+@media only screen and (max-width: 700px) {
+  main {
+    width: 550px;
+  }
+}
