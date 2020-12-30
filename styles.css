@@ -6,7 +6,8 @@
 }
 
 body {
-  background: #f0f2f5;
+  background: url('./images/bg.jpg');
+  
   color: #576063;
   -webkit-font-smoothing: antialiased;
 }
@@ -32,6 +33,7 @@ input[type=range] {
   border-radius: 5px;
   background-color: #71bff3;
   outline: none;
+  box-shadow: 0px 0px 10px #89cefc93;
 }
 
 ::-webkit-slider-thumb {
@@ -44,6 +46,7 @@ input[type=range] {
     height: 15px;
     border-radius: 50%;
     background: #e26060;
+    box-shadow: 0px 0px 10px #e2606093;
 }
 
 /* ---------------------------- FIM DA REMOÇÃO DE ESTILOS INICIAIS ------------------------------ */
@@ -57,8 +60,10 @@ main {
   
   margin: auto;
   padding: 0 20px 0 20px;
-  max-width: 1000px;
   min-width: 300px;
+  height: 100vh;
+
+  background-image: linear-gradient(#f0f2f5ea, #f0f2f5 70%);
 }
 
 h1#titulo {
@@ -151,8 +156,10 @@ div#box-mensagem {
   padding: 30px;
   height: 180px;
   width: 100%;
+  max-width: 700px;
   min-width: 300px;
-  background: #fff;
+  background-image: linear-gradient(#ffffff
+  df, #fff 70%);
   box-shadow: 0px 0px 20px #00000010;
   border-radius: 10px;
   border: 2px solid #ddd;
@@ -172,6 +179,7 @@ p#muito {
   font-weight: bolder;
   font-size: 1.3rem;
   color: #d45555;
+  text-shadow: 0px 0px 10px #e2606093;
 }
 
 #botoes {
