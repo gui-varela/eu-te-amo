@@ -174,7 +174,7 @@ div#box-mensagem {
   width: 100%;
   max-width: 700px;
   min-width: 300px;
-  background-image: linear-gradient(#ffffffdf, #fff 70%);
+  background: transparent;
   box-shadow: 0px 0px 20px #00000010;
   border-radius: 10px;
   border: 2px solid #ddd;
