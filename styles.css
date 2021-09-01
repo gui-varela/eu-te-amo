@@ -6,11 +6,10 @@
 }
 
 body {
-  background: url('./images/bg.jpg');
-  background-size: cover;
-  
   color: #576063;
   -webkit-font-smoothing: antialiased;
+  background-image: linear-gradient(#f0f2f5ea, #f0f2f5 70%);
+  background-size: cover;
 }
 
 body, input, button {
@@ -39,15 +38,15 @@ input[type=range] {
 
 ::-webkit-slider-thumb {
 
-  all: unset; /* limpa os estilos iniciais */
-  -webkit-appearance: none; /* remove a aparencia padão */
+
+  -webkit-appearance: none; 
   border: none;
   
-    width: 15px;
-    height: 15px;
-    border-radius: 50%;
-    background: #e26060;
-    box-shadow: 0px 0px 10px #e2606093;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background: #e26060;
+  box-shadow: 0px 0px 10px #e2606093;
 }
 
 /* ---------------------------- FIM DA REMOÇÃO DE ESTILOS INICIAIS ------------------------------ */
@@ -60,12 +59,27 @@ main {
   justify-content: center;
   
   margin: 0;
-  padding: 0 20px 0 20px;
   height: 100vh;
   min-width: 500px;
 
-  background-image: linear-gradient(#f0f2f5ea, #f0f2f5 70%);
-  background-size: cover;
+
+}
+
+#container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  
+  padding: 0 20px 0 20px;
+  margin: 0;
+  height: 100%;
+  width: 100%;
+  min-width: 500px;
+
+  background-image: linear-gradient(#f0f2f5ca, #f0f2f5 70%), url(images/bg.jpg);
+
 }
 
 h1#titulo {
@@ -160,8 +174,7 @@ div#box-mensagem {
   width: 100%;
   max-width: 700px;
   min-width: 300px;
-  background-image: linear-gradient(#ffffff
-  df, #fff 70%);
+  background-image: linear-gradient(#ffffffdf, #fff 70%);
   box-shadow: 0px 0px 20px #00000010;
   border-radius: 10px;
   border: 2px solid #ddd;

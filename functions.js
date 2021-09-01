@@ -28,7 +28,7 @@ function gerar() {
   var msg = ''
 
   var i = 0
-  while (i<valor) {
+  while (i<valor/2) {
     var mensagens = [
       `${prefI[parseInt(Math.random()*prefI.length)]} infinito&nbsp`,
       `${prefM[parseInt(Math.random()*prefM.length)]} número de estrelas do universo&nbsp`,
